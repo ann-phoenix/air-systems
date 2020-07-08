@@ -1,0 +1,14 @@
+$blue: #408994;
+$white: #fff;
+$red: #e74a4c;
+$grey: #7f7f7f;
+
+@mixin pt700 {
+	font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+
+@mixin o700{
+	font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
