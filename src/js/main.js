@@ -9,5 +9,15 @@ $(function () {
     nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next.png" alt="next arrow"></button>',
 	});
 
+	$('.offers__inner').slick({
+		arrows: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		rows: 1,
+		prevArrow: false,
+		nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next1.svg" alt="next arrow"></button>',
+
+
+	});
 });
 
