@@ -14,12 +14,14 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-body{
- font-family: 'PT Sans', sans-serif;
- font-size: 20px;
- color: #000;
- font-weight: 400;
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
 }
+
 ul,
 ol,
 li,
@@ -35,9 +37,10 @@ h6 {
 }
 
 li,
-ul{
+ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: #000;
@@ -49,35 +52,49 @@ input:focus {
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   overflow-x: hidden;
 }
+
 .content {
-	flex: 1 0 auto;
-}
-.footer {
-	flex: 0 0 auto;
+  flex: 1 0 auto;
 }
 
-.container{
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-#modal{
+.container__fluid {
+  max-width: 1615px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#modal {
   display: none;
 }
-.btn{
+
+.btn {
   cursor: pointer;
 }
-.title{
+
+.title {
   font-size: 40px;
   line-height: 55px;
   @include pt700;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+}
+
+.text{
+line-height: 30px;
 }

@@ -16,8 +16,16 @@ $(function () {
 		rows: 1,
 		prevArrow: false,
 		nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next1.svg" alt="next arrow"></button>',
+	});
 
 
+	
+	$('.hit__inner').slick({
+		arrows: true,
+		slidesToShow: 4,
+		slidesToScroll: 2,
+		prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/back-blue.svg" alt="prev arrow"></button>',
+		nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next-blue.svg" alt="next arrow"></button>',
 	});
 });
 
