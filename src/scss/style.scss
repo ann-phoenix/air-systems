@@ -430,7 +430,16 @@
 
 //end hit
 //start advantages
-.advantages {
+.advantages__title{
+margin-bottom: 45px;
+}
+.advantages__text{
+padding-bottom: 98px;
+max-width: 980px;
+text-align: center;
+margin: 0 auto;
+}
+.advantages__inner {
 	background-repeat: no-repeat;
 	min-height: 730px;
 	width: 100%;
@@ -440,7 +449,7 @@
 	padding: 105px 0 85px;
 }
 
-.advantages__inner {
+.advantages__box {
 	max-width: 640px;
 }
 
