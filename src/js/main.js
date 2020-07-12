@@ -1,5 +1,7 @@
 $(function () {
 
+	//sliders
+
 	$('.slider').slick({
 		dots: true,
 		autoplay: true,
@@ -13,7 +15,6 @@ $(function () {
 		arrows: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
-		// rows: 1,
 		autoplay: true,
 		autoplaySpeed: 8000,
 		prevArrow: false,
@@ -21,7 +22,6 @@ $(function () {
 	});
 
 
-	
 	$('.hit__inner').slick({
 		arrows: true,
 		slidesToShow: 4,
@@ -31,5 +31,17 @@ $(function () {
 		prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/back-blue.svg" alt="prev arrow"></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next-blue.svg" alt="next arrow"></button>',
 	});
+});
+
+//accordion
+
+$(document).ready(function() {
+ $('.faq__item-title').click(function(event){
+	 if($('.faq__inner').hasClass('one')){
+		 $('.faq__item-title').not($(this)).removeClass('active');
+		 $('.faq__item-text').not($(this).next()).slideUp(500);
+	 }
+  $(this).toggleClass('active').next().slideToggle(500);
+ });
 });
 
