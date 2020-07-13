@@ -735,27 +735,31 @@
 }
 
 //end faq
-
-.consultation{
+//start consultation
+.consultation {
 	background-repeat: no-repeat;
-	background-position:top center;
+	background-position: top center;
 	background-size: cover;
 	min-height: 862px;
-	padding: 300px 0 260px;
+	padding: 297px 0 268px;
 	width: 100%;
 	background-attachment: fixed;
 	text-align: center;
 }
-.consultation__title{
+
+.consultation__title {
 	margin-bottom: 30px;
 }
-.consultation__text{
+
+.consultation__text {
 	margin-bottom: 55px;
 }
-.cosultation__form{
+
+.cosultation__box {
 	margin-bottom: 40px;
 }
-.consultation__form-input{
+
+.consultation__form-input {
 	width: 262px;
 	padding: 29px 30px 23px 25px;
 	border: none;
@@ -763,11 +767,11 @@
 	margin-right: 22px;
 }
 
-.consultation__form-input::placeholder{
+.consultation__form-input::placeholder {
 	color: #000;
 }
 
-.consultation__form-button{
+.consultation__form-button {
 	padding: 28px 50px 23px 57px;
 	background-color: $red;
 	color: $white;
@@ -777,18 +781,73 @@
 	transition: all .5s;
 	border: 1px solid transparent;
 
-	&:hover{
+	&:hover {
 		background-color: $blue;
 		border: 1px solid;
 	}
 }
-.consultation__info{
-}
-.consultation__info-span{
+
+
+.consultation__info-span {
 	display: block;
 	margin-top: 20px;
 
 }
+
+//end consultation
+//start products
+.products {
+	padding-bottom: 65px;
+	padding-top: 30px;
+}
+
+.products__inner {
+	padding-bottom: 30px;
+}
+
+.products__slider-img {
+	width: 250px;
+	height: 100px;
+}
+
+.products__slider-item {
+	border-left: 1px solid $grey-border;
+}
+
+
+.products .slick-arrow {
+	position: absolute;
+	top: 20%;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.products .slick-next {
+	left: 100%;
+}
+
+.products .slick-prev {
+	right: 102%;
+}
+
+.products__promo {
+	text-align: center;
+	max-width: 950px;
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+.products__promo-span {
+	display: block;
+}
+
+.products__line {
+	border-bottom: 1px solid $grey-border;
+	margin-bottom: 60px;
+}
+
+//end products
 
 //-----------------------------------------------------------------------------------------------------------
 //

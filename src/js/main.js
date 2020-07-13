@@ -31,6 +31,16 @@ $(function () {
 		prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/back-blue.svg" alt="prev arrow"></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next-blue.svg" alt="next arrow"></button>',
 	});
+
+	$('.products__inner').slick({
+		slidesToShow: 6,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		arrows: true,
+		prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/back-blue.svg" alt="prev arrow"></button>',
+nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next-blue.svg" alt="next arrow"></button>',
+	});
+	
 });
 
 //accordion
