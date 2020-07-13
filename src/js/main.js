@@ -55,3 +55,8 @@ $(document).ready(function() {
  });
 });
 
+//burger menu
+
+//scroll
+
+//sticky header
