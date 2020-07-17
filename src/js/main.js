@@ -19,6 +19,9 @@ $(function () {
 		autoplaySpeed: 8000,
 		prevArrow: false,
 		nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next1.svg" alt="next arrow"></button>',
+
+
+
 	});
 
 
@@ -28,19 +31,79 @@ $(function () {
 		slidesToScroll: 2,
 		autoplay: true,
 		autoplaySpeed: 5000,
+		dots: false,
 		prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/back-blue.svg" alt="prev arrow"></button>',
 		nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next-blue.svg" alt="next arrow"></button>',
+		responsive: [
+			{
+				breakpoint: 1665,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 2,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 1170,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+
+				}
+			},
+			{
+				breakpoint: 796,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+
+				}
+			}
+		]
 	});
 
 	$('.products__inner').slick({
 		slidesToShow: 6,
 		autoplay: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 2000,
 		arrows: true,
 		prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/back-blue.svg" alt="prev arrow"></button>',
 nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next-blue.svg" alt="next arrow"></button>',
+
+responsive: [
+	{
+		breakpoint: 1680,
+		settings: {
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			arrows: false,
+		}
+	},
+	{
+		breakpoint: 1170,
+		settings: {
+			slidesToShow: 4,
+			slidesToScroll: 1,
+
+		}
+	},
+	{
+		breakpoint: 930,
+		settings: {
+			slidesToShow: 3,
+			slidesToScroll: 1,
+
+		}
+	},
+	{
+		breakpoint: 570,
+		settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1,
+		}
+	}
+]
 	});
-	
 });
 
 //accordion
