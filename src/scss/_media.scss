@@ -6,8 +6,14 @@
 
 @media (max-width: 1230px) {
 	.item-tiny {
-    width: 45%;
+		width: 45%;
 		height: 147px;
+	}
+}
+
+@media (max-width: 1070px) {
+	.offers .slick-arrow {
+		right: 30%;
 	}
 }
 
@@ -19,16 +25,19 @@
 
 	.footer__logo {
 		margin-bottom: 15px;
+
 		.logo__img {
 			width: 70%;
 		}
+
 		.contacts__address {
 			margin-bottom: 15px;
 		}
 	}
+
 	.item-tiny {
-    width: 35%;
-  }
+		width: 35%;
+	}
 }
 
 @media(max-width: 900px) {
@@ -60,6 +69,12 @@
 
 
 @media (max-width: 795px) {
+
+	.title {
+    font-size: 35px;
+		line-height: 45px;
+	}
+
 	.hit__item {
 		max-width: 460px;
 	}
@@ -80,39 +95,65 @@
 	.products__line {
 		margin-bottom: 30px;
 	}
-	.services__list{
+
+	.services__list {
 		flex-wrap: nowrap;
 		height: auto;
 	}
-	.services__item{
+
+	.services__item {
 		width: 590px;
 		min-height: 590px;
 		margin-bottom: 10px;
-		&:hover{
+
+		&:hover {
 			background-size: 105%;
 		}
-		&:last-child{
+
+		&:last-child {
 			margin-bottom: 0;
 		}
 	}
 
-	.services__item-title{
+	.services__item-title {
 		font-size: 20px;
 	}
+
 	.services__item-text,
-	.services__item-btn{
+	.services__item-btn {
 		font-size: 16px;
 	}
 
-
+	.offers__subtitle{
+		font-size: 25px;
+		line-height: 36px;
+		margin-bottom: 44px;
+	}
+	.offers .slick-arrow {
+		top: -74px;
+		right: 25%;
+	}
 }
 
+
+@media(max-width: 560px) {
+	.offers__subtitle{
+		font-size: 25px;
+		line-height: 36px;
+		margin-bottom: 44px;
+	}
+	.offers .slick-arrow {
+		top: -74px;
+		right: 20%;
+	}
+}
 @media(max-width: 470px) {
 
 	.title {
-    font-size: 25px;
-		line-height: 35px;
+		font-size: 25px;
+		line-height: 30px;
 	}
+
 	.advantages__item-1:after {
 		top: 36px;
 		left: 9px;
@@ -165,12 +206,24 @@
 		width: 142px;
 		padding: 10px;
 	}
-	.services__item{
+
+	.services__item {
 		width: 470px;
 		min-height: 470px;
 		margin-bottom: 5px;
-		&:last-child{
+
+		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+
+	.offers__subtitle{
+		font-size: 21px;
+		line-height: 30px;
+		margin-bottom: 35px;
+	}
+	.offers .slick-arrow {
+		top: -62px;
+		right: 10%;
 	}
 }
