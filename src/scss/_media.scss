@@ -38,14 +38,27 @@
 	.item-tiny {
 		width: 35%;
 	}
-}
 
-@media(max-width: 900px) {
 	.faq__item-title {
 		font-size: 25px;
 		letter-spacing: 0px;
-
+		max-width: 715px;
 	}
+
+	.faq__item-title::after,
+	.faq__item-title.active::after {
+		right: -16%;
+		width: 32px;
+		height: 32px;
+	}
+
+	.faq__item {
+		padding: 35px;
+	}
+
+}
+
+@media(max-width: 900px) {
 
 	.consultation__form-input {
 		display: block;
@@ -65,13 +78,29 @@
 		min-height: 655px;
 		padding: 160px 0 130px;
 	}
+
+	.faq__item-title::after,
+	.faq__item-title.active::after {
+		right: -9%;
+		width: 30px;
+		height: 30px;
+	}
+
+	.faq__item {
+		padding: 35px;
+	}
+
+	.faq__item-title {
+		font-size: 25px;
+		max-width: 670px;
+	}
 }
 
 
 @media (max-width: 795px) {
 
 	.title {
-    font-size: 35px;
+		font-size: 35px;
 		line-height: 45px;
 	}
 
@@ -124,29 +153,51 @@
 		font-size: 16px;
 	}
 
-	.offers__subtitle{
+	.offers__subtitle {
 		font-size: 25px;
 		line-height: 36px;
 		margin-bottom: 44px;
 	}
+
 	.offers .slick-arrow {
 		top: -74px;
 		right: 25%;
 	}
+
+	.faq__item-title::after,
+	.faq__item-title.active::after {
+		right: -5%;
+		width: 25px;
+		height: 25px;
+	}
+
+	.faq__item {
+		padding: 20px 25px 20px 15px;
+	}	
+
+	.faq__item-title {
+		font-size: 20px;
+		max-width: 570px;
+	}
+	.faq__inner {
+    max-width: 665px;
+}
 }
 
 
 @media(max-width: 560px) {
-	.offers__subtitle{
+	.offers__subtitle {
 		font-size: 25px;
 		line-height: 36px;
 		margin-bottom: 44px;
 	}
+
 	.offers .slick-arrow {
 		top: -74px;
 		right: 20%;
 	}
 }
+
 @media(max-width: 470px) {
 
 	.title {
@@ -217,11 +268,12 @@
 		}
 	}
 
-	.offers__subtitle{
+	.offers__subtitle {
 		font-size: 21px;
 		line-height: 30px;
 		margin-bottom: 35px;
 	}
+
 	.offers .slick-arrow {
 		top: -62px;
 		right: 10%;

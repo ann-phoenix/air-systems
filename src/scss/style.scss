@@ -303,7 +303,7 @@
 .offers__item-img {
 	max-width: 589px;
 	width: 100%;
-	height: auto;
+	height: 589px;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -313,10 +313,12 @@
 	background-position: center;
 	object-fit: cover;
 }
-.img-4{
+
+.img-4 {
 	object-position: left;
 
 }
+
 //end offers
 //start hit
 .hit {
@@ -355,7 +357,7 @@
 	background-repeat: no-repeat;
 	margin-bottom: 110px;
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 }
 
 .hit__item-box {
@@ -426,13 +428,14 @@
 }
 
 .hit__item2 {
-	padding: 70px 15px 30px 15px;
+	padding: 55px 15px 30px 15px;
 }
 
 .hit__item-img2 {
-	min-height: 175px;
+	min-height: 195px;
 	background-repeat: no-repeat;
 	margin-bottom: 85px;
+	background-size: contain;
 }
 
 .hit__item-img4 {
@@ -722,6 +725,7 @@
 	position: relative;
 	@include pt700;
 	cursor: pointer;
+	max-width: 795px;
 
 	&::after {
 		content: '';
@@ -732,8 +736,10 @@
 		top: 0px;
 		background-image: url(../images/icons/plus.svg);
 		background-repeat: no-repeat;
-		right: -12px;
-		transform: translateY(-50%);
+		// right: -12px;
+		right: -9%;
+		transform: translate(9%, -50%);
+		// transform: translateY(-50%);
 		top: 50%;
 		background-size: cover;
 		border: 5px solid transparent;
@@ -747,18 +753,63 @@
 	width: 45px;
 	height: 45px;
 	background-position: center;
-	right: -12px;
+	// right: -12px;
+	right: -9%;
 	background-size: cover;
 	border: 5px solid transparent;
 	top: 0;
 }
-
 .faq__item-text {
 	padding: 30px 0 0 0;
 	display: none;
 	max-width: 850px;
 	line-height: 25px;
 }
+
+
+
+
+
+
+
+
+// .span.active::after {
+	// transform: rotate(225deg);
+	// border-radius: 50%;
+	// background-color: #eee;
+	// width: 45px;
+	// height: 45px;
+	// background-position: center;
+	// right: -12px;
+	// background-size: cover;
+	// border: 5px solid transparent;
+	// top: 0;
+// }
+
+
+// .span{
+	// margin-bottom: 10px;
+	// position: relative;
+	// &::after {
+		// content: '';
+		// position: absolute;
+		// transition: all .5s;
+		// width: 45px;
+		// height: 45px;
+		// top: 0px;
+		// background-image: url(../images/icons/plus.svg);
+		// background-repeat: no-repeat;
+		// right: -12px;
+		// transform: translateY(-50%);
+		// top: 50%;
+		// background-size: cover;
+		// border: 5px solid transparent;
+	// }
+// }
+
+
+
+
 
 //end faq
 //start consultation

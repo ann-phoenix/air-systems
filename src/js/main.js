@@ -15,7 +15,7 @@ $(function () {
 		arrows: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
-		// autoplay: true,
+		autoplay: true,
 		autoplaySpeed: 8000,
 		prevArrow: false,
 		nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next1.svg" alt="next arrow"></button>',
@@ -124,6 +124,7 @@ $(document).ready(function() {
   $(this).toggleClass('active').next().slideToggle(500);
  });
 });
+
 
 //burger menu
 
