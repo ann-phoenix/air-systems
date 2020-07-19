@@ -8,7 +8,8 @@ $(function () {
 		autoplaySpeed: 5000,
 		fade: true,
 		prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/back.png" alt="prev arrow"></button>',
-    nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next.png" alt="next arrow"></button>',
+		nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/next.png" alt="next arrow"></button>',
+
 	});
 
 	$('.offers__inner').slick({
@@ -128,6 +129,23 @@ $(document).ready(function() {
 
 //burger menu
 
+$('.main__burger').on('click', function(){
+	$('.main__menu-list').slideToggle();
+ });
+
+$('.main__burger').click(function(event){
+	$('.main__burger').toggleClass('active');
+});
+
+
+
 //scroll
 
-//sticky header
+$(document).ready(function(){
+	$('a[href^="#"]').click(function(){
+		var target = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(target).offset().top
+		}, 1000);
+	});
+});

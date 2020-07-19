@@ -4,14 +4,40 @@
 	}
 }
 
+@media (max-width: 1450px) {
+	.main .slick-prev {
+		left: 42%;
+	}
+
+	.main .slick-next {
+		right: 42%;
+	}
+
+	.main .slick-dots li {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
 @media (max-width: 1230px) {
 	.item-tiny {
 		width: 45%;
 		height: 147px;
 	}
+
+	.main__logo {
+		.logo__img {
+			width: 70%;
+		}
+	}
+
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1081px) {
+	.main__contacts {
+		display: none;
+	}
+
 	.offers .slick-arrow {
 		right: 30%;
 	}
@@ -56,9 +82,30 @@
 		padding: 35px;
 	}
 
+	.main .slick-prev {
+		left: 40%;
+	}
+
+	.main .slick-next {
+		right: 40%;
+	}
+
+	.main .slick-dots li {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
 }
 
 @media(max-width: 900px) {
+
+	.main__menu-link {
+		font-size: 16px;
+	}
+
+	.main__logo .logo__img {
+		width: 60%;
+	}
 
 	.consultation__form-input {
 		display: block;
@@ -160,7 +207,7 @@
 	}
 
 	.offers .slick-arrow {
-		top: -74px;
+		top: -60px;
 		right: 25%;
 	}
 
@@ -173,15 +220,200 @@
 
 	.faq__item {
 		padding: 20px 25px 20px 15px;
-	}	
+	}
 
 	.faq__item-title {
 		font-size: 20px;
 		max-width: 570px;
 	}
+
 	.faq__inner {
-    max-width: 665px;
-}
+		max-width: 665px;
+	}
+
+	.main .slick-arrow {
+		display: none !important;
+	}
+
+	.main .slick-dots {
+		display: none !important;
+	}
+
+	.main__slider-title {
+		font-size: 30px;
+		line-height: 43px;
+	}
+
+	.main__slider-text {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.main__content-link {
+		font-size: 20px;
+		padding: 20px 35px;
+	}
+
+	.offers {
+		padding-top: 555px;
+		padding-bottom: 0px;
+	}
+
+	.hit,
+	.service,
+	.faq,
+	.services {
+		padding: 45px 0;
+	}
+
+	.services {
+		padding-bottom: 0;
+	}
+
+	.advantages__title,
+	.hit__title,
+	.offers__title {
+		margin-bottom: 20px;
+	}
+
+	.services__title,
+	.faq__title,
+	.offers__subtitle {
+		margin-bottom: 30px;
+	}
+
+	.advantages__text {
+		padding: 0 10px 30px;
+	}
+
+	.hit__text {
+		padding: 0 10px;
+	}
+
+	.products__promo {
+		padding: 0 10px;
+	}
+
+	.hit__inner {
+		margin-top: 30px;
+	}
+
+
+	//burger menu
+	.main__menu-list {
+		display: none;
+	}
+
+	.main__burger {
+		width: 30px;
+		display: block;
+		margin-left: auto;
+		position: relative;
+		cursor: pointer;
+
+		&-line {
+			background-color: $blue;
+			height: 2px;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			top: 6px;
+			content: "";
+			transition: all .5s;
+		}
+	}
+
+	.main__burger::before,
+	.main__burger::after {
+		content: "";
+		background-color: $blue;
+		height: 2px;
+		width: 100%;
+		left: 0;
+		position: absolute;
+		transition: all .5s;
+	}
+
+	.main__burger::before {
+		top: 0px;
+	}
+
+	.main__burger::after {
+		bottom: -14px;
+	}
+
+	.main__burger.active::before {
+		transform: rotate(45deg);
+		top: 8px;
+		background-color: $red;
+		z-index: 1;
+
+	}
+
+	.main__burger.active::after {
+		transform: rotate(-45deg);
+		bottom: -9px;
+		background-color: $red;
+		z-index: 1;
+
+	}
+
+	.main__burger.active .main__burger-line {
+		transform: scale(0);
+	}
+
+	.main__slider-item {
+		min-height: 610px;
+	}
+
+	.main__slider-box {
+		margin-top: 165px;
+	}
+
+	.main__inner {
+		height: 100px;
+	}
+
+	.main__menu-list {
+		display: none;
+		flex-direction: column;
+		left: 0px;
+		top: 142px;
+		width: 100%;
+		bottom: 0px;
+		right: 0px;
+		height: 100%;
+		position: absolute;
+	}
+
+	.main__menu-item {
+		border-bottom: 0px solid transparent;
+		padding-bottom: 0;
+
+		&+& {
+			margin-left: 0;
+		}
+
+		&:hover {
+			border-bottom: 0px solid transparent;
+		}
+	}
+
+	.main__menu-link {
+		padding: 50px;
+		border-bottom: 1px solid #b9b9b9;
+		background-color: #fff;
+		width: 100%;
+		color: grey;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 16px;
+		@include pt700;
+
+		&:hover {
+			color: $blue;
+		}
+	}
 }
 
 
@@ -195,6 +427,18 @@
 	.offers .slick-arrow {
 		top: -74px;
 		right: 20%;
+	}
+
+	.main__slider-box {
+		text-align: center;
+	}
+
+	.main__slider-title {
+		font-size: 27px;
+	}
+
+	.main__slider-text {
+		font-size: 20px;
 	}
 }
 
@@ -255,7 +499,7 @@
 	.footer__box {
 		font-size: 15px;
 		width: 142px;
-		padding: 10px;
+		padding: 5px;
 	}
 
 	.services__item {
@@ -277,5 +521,15 @@
 	.offers .slick-arrow {
 		top: -62px;
 		right: 10%;
+	}
+
+	.faq__item-text {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 796px) {
+	.main__menu-list {
+		display: inline-flex !important;
 	}
 }

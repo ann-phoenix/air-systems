@@ -4,7 +4,7 @@
 <body> @@include('components/_header.html')
   <!-- WRITE CODE HERE -->
   <!--main-->
-  <section class="main">
+  <section class="main" id="main">
     <div class="container">
       <div class="main__wrapper">
         <div class="main__top">
@@ -12,19 +12,19 @@
             <a class="main__logo logo" href="#">
               <img class="logo__img" src="images/logo.png" alt="">
             </a>
-            <div class="main__burger">
-              <div class="main__burger-line"></div>
-            </div>
             <nav class="main__menu">
+              <div class="main__burger">
+                <div class="main__burger-line"></div>
+              </div>
               <ul class="main__menu-list">
                 <li class="main__menu-item">
-                  <a class="main__menu-link" href="#">Главная </a></li>
+                  <a class="main__menu-link" href="#main">Главная </a></li>
                 <li class="main__menu-item">
-                  <a class="main__menu-link" href="#">Выбрать кондиционер </a></li>
+                  <a class="main__menu-link" href="#offers"">Выбрать кондиционер </a></li>
+                <li class=" main__menu-item">
+                    <a class="main__menu-link" href="#advantages">Почему мы </a></li>
                 <li class="main__menu-item">
-                  <a class="main__menu-link" href="#">Почему мы </a></li>
-                <li class="main__menu-item">
-                  <a class="main__menu-link" href="#">Контакты </a></li>
+                  <a class="main__menu-link" href="#footer">Контакты </a></li>
               </ul>
             </nav>
             <div class="main__contacts contacts">
@@ -77,14 +77,13 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
   <!--/main-->
   <!--offers-->
   <section class="offers">
-    <div class="container container__offers">
+    <div class="container container__offers" id="offers">
       <div class="offers__wrapper">
-        <div class="offers__title title">Выберите свой кондиционер</div>
+        <div class="offers__title title ">Выберите свой кондиционер</div>
         <div class="offers__subtitle">Наши предложения</div>
         <div class="offers__inner">
           <div class="offers__item item-1">
@@ -206,7 +205,7 @@
   </section>
   <!--/hit-->
   <!--advantages-->
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <div class="advantages__title title">наши преимущества</div>
     <div class="advantages__text text">Almaty Air Systems предлагает полное сопровождение всего процесса, от выбора
       кондиционера, его покупки, доставки и монтажа. Наши мастера могут поставить кондиционер туда, куда вам нужно,
@@ -266,8 +265,8 @@
   <!--faq-->
   <section class="faq">
     <div class="container">
-      <div class="faq__title title">Часто задаваемые вопросы - FAQ </div> 
-       <div class="faq__inner one">
+      <div class="faq__title title">Часто задаваемые вопросы - FAQ </div>
+      <div class="faq__inner one">
         <div class="faq__item">
           <div class="faq__item-title">Как вызвать мастера? <span class="span"></span> </div>
           <div class="faq__item-text"> Заполните форму онлайн заявки, и наш диспетчер свяжется с Вами в ближайшее время.
